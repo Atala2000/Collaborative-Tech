@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CTL Technology Solutions - Contact</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="partners.html">Partners</a></li>
+        <li class="dropdown">
+          <a href="#">Solutions</a>
+          <div class="dropdown-content">
+            <a href="e-signatures.html">E-Signatures</a>
+            <a href="ssl-pki.html">SSL's and PKI's</a>
+            <a href="print-management.html">Print Management Software</a>
+            <a href="network-infrastructure.html">Network Infrastructure</a>
+            <a href="cyber-security.html">Cyber Security</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <p>If there is a service that has interested you feel free to contact us in the following ways:</p>
+  <div class="card">
+  <h2>Contact form</h2>
+  <form onsubmit="sendEmail(); reset(); return false;">
+  <input type="text" id="name" placeholder="Full Name" required>
+  <input type="email" id="email" placeholder="Email" required>
+  <textarea id="message" rows="4" placeholder="How can we help you?" required></textarea>
+  <button type="submit">Send</button>
+  </form>
+  <p>
+  You can also send us an e-mail directly through the following link
+  </p>
+  <a href="atalakidi@gmail.com"><br>Company Mail</a>
+  </div> 
+  
+  
+  
+  
+  
+  
+  </form>
+  
+  
+  
+  
+      </div>
+     
+      
+  
+  <script src=" https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+  
+      Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "atalakidi@gmail.com",
+      Password : "4EA3624FAC99A4ED1845131B067DEE7DB620",
+      To : 'atalakidi@gmail.com',
+      From : document.getElementById("email").value,
+      Subject : "Contact Form Enquiry",
+      Body : "Name: " + document.getElementById("name").value
+  
+      + "<br> Email" + document.getElementById("email").value
+      + "<br> Message: " + document.getElementById("message").value 
+  }).then(
+    message => alert(message)
+  );
+  
+    }
+  </script>
+
+  <footer>
+    <p>&copy; 2023 CTL Technology Solutions. All rights reserved.</p>
+  </footer>
+</body>
+</html>
