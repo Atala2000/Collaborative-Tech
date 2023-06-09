@@ -1,8 +1,19 @@
+html, body {
+  height: 100%;
+}
+
 body {
-  font-family: "Times New Roman", Times, serif;
-  font-size: large;
+  display: flex;
+  flex-direction: column;
+}
 
-
+footer {
+  margin-top: auto;
+  background-color: #fdbdbd;
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: white;
 }
 
 header {
@@ -121,12 +132,6 @@ aside {
   padding: 20px;
 }
 
-footer {
-  background-color: black;
-  padding: 1px;
-  text-align: center;
-  color: white;
-}
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -161,7 +166,9 @@ main p{
  body p{
   line-height: 1.7em;
  }
-
+#solution {
+  margin-bottom: 300px;
+}
 #solution p{
   line-height: 1.7em;
  }
@@ -348,3 +355,4 @@ img{
 #news h2{
   text-align: center;
 }
+
