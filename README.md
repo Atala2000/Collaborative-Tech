@@ -1,2 +1,1 @@
-# Collaborative-Tech
-Website for CTL Limited
+Website for Collaborative Technologies Limited
