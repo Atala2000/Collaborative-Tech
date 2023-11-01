@@ -14,8 +14,9 @@ body {
   height: 100px;
 }
 
-header h2 {
+header {
   text-align: center;
+  border-radius: 4px;;
 }
 
 nav {
@@ -43,7 +44,7 @@ nav {
   background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  top: 100%;
+  top: 100%; /*! To make sure that the hover element appears below the button */
   left: 0;
   z-index: 1;
 }
@@ -85,4 +86,34 @@ h1 {
 
 .dropover li {
   margin: 0
+}
+
+/* !Change opacity of the banner */
+.main::before {
+  content: '';
+  background-image: url(../images/background.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+
+.main p, h3, h1 { /* *do this to make sure the texts go on top of the element that is changing opacity */
+  position: relative;
+}
+
+.main {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  height: 350px;
+
+}
+
+.main h3 {
+  text-align: center;
 }
