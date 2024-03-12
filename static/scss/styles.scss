@@ -1,0 +1,177 @@
+* {
+    box-sizing: content-box;
+}
+
+html {
+
+}
+
+body {
+    margin: 0;
+}
+
+
+.kanit-thin {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+.kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+header {
+    height: 65vh;
+    font-family: sans-serif;
+    background-image: url('../../images/background.jpg');
+    background-size: 99.9%;
+    background-attachment: fixed;
+    position: relative;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 25px;
+}
+
+.logo {
+    height: 70;
+    width: 70px;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.header-content {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 30px;
+    p {
+        font-size: 30px;
+    }
+    button {
+        background-color: #55DD73;
+        border-radius: 30px;
+        padding: 7px;
+        border: none;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        li  {
+            list-style: none;
+        }
+    }
+}
+
+#who-are-we {
+    background-color: white;
+    height: 40vh;
+    padding: 70px;
+    display: flex;
+    justify-content: space-between; 
+
+    .paragraph {
+        width: 50%;
+        font-size: 20px;
+        text-align: justify;
+    }
+}
+
+.box-c {
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+
+.blue {
+    position: absolute;
+    background-color: #55DDDD;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.green {
+    position: absolute;
+    background-color: #55DD73;
+    top: -20px;
+    left: -30px;
+}
+
+.small-square {
+    height: 150px;
+    width: 150px;
+    z-index: 1;
+}
+
+.big-square {
+    height: 250px;
+    width: 250px;
+}
+
+.banner {
+    width: 100%;
+    background-color: #55DD73;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#services {
+    padding: 30px;
+    height: 40vh;
+}
+
+.service {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    height: 100%;
+}
+
+.svg-icon {
+    height: 30px;
+    width: 30px;
+}
+
+#contact-us {
+    padding: 30px;
+}
+
+
+
