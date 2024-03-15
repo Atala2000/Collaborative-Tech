@@ -37,8 +37,9 @@ nav {
 }
 
 .logo {
-  height: 70;
-  width: 70px;
+  height: 50;
+  width: 50px;
+  z-index: 1;
 }
 .logo img {
   height: 100%;
@@ -58,27 +59,43 @@ nav {
 .header-content button {
   background-color: #55DD73;
   border-radius: 30px;
-  padding: 7px;
+  padding: 5px 10px;
   border: none;
   cursor: pointer;
   color: white;
 }
+.header-content button:hover {
+  background-color: rgba(40, 190, 73, 0.9);
+  transition: 0.5s ease;
+}
 
 nav {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
 }
-nav ul {
+nav .logo {
+  height: 100px;
+  width: 100px;
+}
+nav .nav-elements {
+  width: 30%;
+}
+nav .nav-elements ul {
   display: flex;
+  gap: 10px;
   justify-content: space-evenly;
-  width: 60%;
 }
-nav ul a {
+nav .nav-elements ul li {
+  list-style: none;
+}
+nav .nav-elements ul li a {
   text-decoration: none;
   color: white;
+  font-size: 25px;
 }
-nav ul li {
-  list-style: none;
+nav .nav-elements ul li a:hover {
+  color: rgba(184, 181, 181, 0.9);
+  transition: 0.5s ease;
 }
 
 #who-are-we {
@@ -129,8 +146,8 @@ nav ul li {
 
 .banner {
   width: 100%;
-  background-color: #55DD73;
-  color: white;
+  background-color: transparent;
+  color: black;
   height: 70px;
   display: flex;
   align-items: center;
@@ -140,6 +157,8 @@ nav ul li {
 #services {
   padding: 30px;
   height: 40vh;
+  background-color: rgba(128, 128, 128, 0.3);
+  margin-bottom: 50px;
 }
 
 .service {
@@ -147,6 +166,9 @@ nav ul li {
   gap: 15px;
   justify-content: center;
   align-items: center;
+}
+.service h2 {
+  font-size: 25px;
 }
 
 .services-row {
@@ -163,4 +185,23 @@ nav ul li {
 
 #contact-us {
   padding: 30px;
+}
+
+.body-nav {
+  padding: 20px;
+  background: linear-gradient(to right, rgba(128, 128, 128, 0.801), rgba(0, 0, 0, 0.897));
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.details {
+  margin-top: 80px;
+}
+
+footer {
+  height: 30vh;
 }/*# sourceMappingURL=styles.css.map */
